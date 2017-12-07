@@ -1,0 +1,108 @@
+{
+  "ejecutivas_de_cuentas": {
+    "nombre": "Ejecutivas de cuentas",
+    "integrantes": [
+      {
+        "id":0,
+        "nombre":"Nicole",
+        "apellido": "Contreras",
+        "email": "nicole.c@mitocondria.cl",
+        "empresa": "Mitocondria",
+        "direccion": "Roberto del Río 1137",
+        "fotografia": "https://placeimg.com/600/600/profile",
+        "edad": "29",
+        "cargo": "Ejecutiva de Cuentas",
+        "bio":"Pariatur exercitation velit aliqua ullamco pariatur ullamco ea labore tempor quis eiusmod consequat consequat officia. Cupidatat minim aliquip reprehenderit quis mollit sit nulla. Sunt eiusmod aliqua nostrud qui consequat esse esse exercitation sit consectetur cupidatat non cupidatat magna qui."
+      },
+      {
+        "id":1,
+        "nombre":"Nataly",
+        "apellido": "Chacón",
+        "email": "nataly@mitocondria.cl",
+        "empresa": "Mitocondria",
+        "direccion": "Roberto del Río 1137",
+        "fotografia": "https://placeimg.com/600/600/profile",
+        "edad": "27",
+        "cargo": "Ejecutiva de Cuentas",
+        "bio":"Pariatur exercitation velit aliqua ullamco pariatur ullamco ea labore tempor quis eiusmod consequat consequat officia. Cupidatat minim aliquip reprehenderit quis mollit sit nulla. Sunt eiusmod aliqua nostrud qui consequat esse esse exercitation sit consectetur cupidatat non cupidatat magna qui."
+      },
+      {
+        "id":2,
+        "nombre":"Karen",
+        "apellido": "Afonso",
+        "email": "karen@mitocondria.cl",
+        "empresa": "Mitocondria",
+        "direccion": "Roberto del Río 1137",
+        "fotografia": "https://placeimg.com/600/600/profile",
+        "edad": "24",
+        "cargo": "Ejecutiva de Cuentas",
+        "bio":"Pariatur exercitation velit aliqua ullamco pariatur ullamco ea labore tempor quis eiusmod consequat consequat officia. Cupidatat minim aliquip reprehenderit quis mollit sit nulla. Sunt eiusmod aliqua nostrud qui consequat esse esse exercitation sit consectetur cupidatat non cupidatat magna qui."
+      },
+      {
+        "id":3,
+        "nombre":"Miguel",
+        "apellido": "Chandía",
+        "email": "miguel@mitocondria.cl",
+        "empresa": "Mitocondria",
+        "direccion": "Roberto del Río 1137",
+        "fotografia": "https://placeimg.com/600/600/profile",
+        "edad": "50",
+        "cargo": "Director de Cuentas",
+        "bio":"Pariatur exercitation velit aliqua ullamco pariatur ullamco ea labore tempor quis eiusmod consequat consequat officia. Cupidatat minim aliquip reprehenderit quis mollit sit nulla. Sunt eiusmod aliqua nostrud qui consequat esse esse exercitation sit consectetur cupidatat non cupidatat magna qui."
+      }
+    ]
+  },
+  "frontend": {
+    "nombre": "FrontEnd",
+    "integrantes": [
+      {
+        "id":0,
+        "nombre":"Bastián",
+        "apellido": "Hidalgo",
+        "email": "bastian@mitocondria.cl",
+        "empresa": "Mitocondria",
+        "direccion": "Roberto del Río 1137",
+        "fotografia": "https://placeimg.com/600/600/profile",
+        "edad": "28",
+        "cargo": "Director de FrontEnd",
+        "bio":"Pariatur exercitation velit aliqua ullamco pariatur ullamco ea labore tempor quis eiusmod consequat consequat officia. Cupidatat minim aliquip reprehenderit quis mollit sit nulla. Sunt eiusmod aliqua nostrud qui consequat esse esse exercitation sit consectetur cupidatat non cupidatat magna qui."
+      },
+      {
+        "id":1,
+        "nombre":"Bastián",
+        "apellido": "Fredes",
+        "email": "bastian.f@mitocondria.cl",
+        "empresa": "Mitocondria",
+        "direccion": "Roberto del Río 1137",
+        "fotografia": "https://placeimg.com/600/600/profile",
+        "edad": "26",
+        "cargo": "FrontEnd",
+        "bio":"Pariatur exercitation velit aliqua ullamco pariatur ullamco ea labore tempor quis eiusmod consequat consequat officia. Cupidatat minim aliquip reprehenderit quis mollit sit nulla. Sunt eiusmod aliqua nostrud qui consequat esse esse exercitation sit consectetur cupidatat non cupidatat magna qui."
+      },
+      {
+        "id":2,
+        "nombre":"Cristián",
+        "apellido": "Arias",
+        "email": "cristian.a@mitocondria.cl",
+        "empresa": "Mitocondria",
+        "direccion": "Roberto del Río 1137",
+        "fotografia": "https://placeimg.com/600/600/profile",
+        "edad": "30",
+        "cargo": "FrontEnd",
+        "bio":"Pariatur exercitation velit aliqua ullamco pariatur ullamco ea labore tempor quis eiusmod consequat consequat officia. Cupidatat minim aliquip reprehenderit quis mollit sit nulla. Sunt eiusmod aliqua nostrud qui consequat esse esse exercitation sit consectetur cupidatat non cupidatat magna qui."
+      },
+      {
+        "id":3,
+        "nombre":"Nelson",
+        "apellido": "Izquierdo",
+        "email": "nelson@mitocondria.cl",
+        "empresa": "Mitocondria",
+        "direccion": "Roberto del Río 1137",
+        "fotografia": "https://placeimg.com/600/600/profile",
+        "edad": "32",
+        "cargo": "FrontEnd",
+        "bio":"Pariatur exercitation velit aliqua ullamco pariatur ullamco ea labore tempor quis eiusmod consequat consequat officia. Cupidatat minim aliquip reprehenderit quis mollit sit nulla. Sunt eiusmod aliqua nostrud qui consequat esse esse exercitation sit consectetur cupidatat non cupidatat magna qui."
+      }
+    ]
+  }
+}

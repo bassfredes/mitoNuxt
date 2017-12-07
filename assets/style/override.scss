@@ -1,0 +1,31 @@
+.primary--text {
+    color: #000 !important;
+}
+
+.list__tile__title,
+.navigation-drawer>.list .list__tile--active .list__tile__title {
+    color: #FFF;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+aside {
+    .list__tile {
+        height: 38px;
+        padding: 0 40px;
+    }
+}
+.application .theme--light.toolbar,
+.theme--light .toolbar {
+    background: #FFF;
+}
+.toolbar {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+nav {
+    .toolbar__title {
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
