@@ -4,9 +4,10 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 const _0e8ab9a1 = () => import('../pages/index.vue' /* webpackChunkName: "pages/index" */).then(m => m.default || m)
-const _734afc42 = () => import('../pages/ejecutivas.vue' /* webpackChunkName: "pages/ejecutivas" */).then(m => m.default || m)
-const _08b59bc1 = () => import('../pages/business.vue' /* webpackChunkName: "pages/business" */).then(m => m.default || m)
-const _3a2c1dda = () => import('../pages/frontend.vue' /* webpackChunkName: "pages/frontend" */).then(m => m.default || m)
+const _a5746d76 = () => import('../pages/ejecutivas/index.vue' /* webpackChunkName: "pages/ejecutivas/index" */).then(m => m.default || m)
+const _0ed41d56 = () => import('../pages/frontend/index.vue' /* webpackChunkName: "pages/frontend/index" */).then(m => m.default || m)
+const _1e557d3e = () => import('../pages/frontend/_id.vue' /* webpackChunkName: "pages/frontend/_id" */).then(m => m.default || m)
+const _33cf58ed = () => import('../pages/ejecutivas/_id.vue' /* webpackChunkName: "pages/ejecutivas/_id" */).then(m => m.default || m)
 
 
 
@@ -49,18 +50,23 @@ export function createRouter () {
 		},
 		{
 			path: "/ejecutivas",
-			component: _734afc42,
+			component: _a5746d76,
 			name: "ejecutivas"
 		},
 		{
-			path: "/business",
-			component: _08b59bc1,
-			name: "business"
+			path: "/frontend",
+			component: _0ed41d56,
+			name: "frontend"
 		},
 		{
-			path: "/frontend",
-			component: _3a2c1dda,
-			name: "frontend"
+			path: "/frontend/:id",
+			component: _1e557d3e,
+			name: "frontend-id"
+		},
+		{
+			path: "/ejecutivas/:id",
+			component: _33cf58ed,
+			name: "ejecutivas-id"
 		}
     ],
     fallback: false

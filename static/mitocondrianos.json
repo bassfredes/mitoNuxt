@@ -1,5 +1,5 @@
 {
-  "ejecutivas_de_cuentas": {
+  "ejecutivasDeCuentas": {
     "nombre": "Ejecutivas de cuentas",
     "integrantes": [
       {
@@ -104,5 +104,13 @@
         "bio":"Pariatur exercitation velit aliqua ullamco pariatur ullamco ea labore tempor quis eiusmod consequat consequat officia. Cupidatat minim aliquip reprehenderit quis mollit sit nulla. Sunt eiusmod aliqua nostrud qui consequat esse esse exercitation sit consectetur cupidatat non cupidatat magna qui."
       }
     ]
+  },
+  "business": {
+    "nombre": "Business"
+  },
+  "creativa": {
+    "nombre": "Dirección Creativa"
   }
 }
+
+

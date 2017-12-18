@@ -1,12 +1,40 @@
+import axios from 'axios'
+
 export const state = () => ({
-  lista: []
+  lista: {
+    business: {
+      integrantes: [],
+      nombre: ''
+    },
+    creativa: {
+      integrantes: [],
+      nombre: ''
+    },
+    ejecutivasDeCuentas: {
+      integrantes: [],
+      nombre: ''
+    },
+    frontend: {
+      integrantes: [],
+      nombre: ''
+    }
+  }
+})
+
+export const api = axios.create({
+  baseURL: '/static'
 })
 
 export const mutations = {
-  add (persona) {
-    state.lista.push({ persona })
-  },
-  remove (persona, { personas }) {
-    state.lista.splice(state.lista.indexOf(personas), 1)
+  setLista (state, lista) {
+    state.lista = lista
+  }
+}
+
+export const actions = {
+  cargarLista (state) {
+    axios.get('/mitocondrianos.json').then(response => {
+      state.commit('setLista', response.data)
+    })
   }
 }

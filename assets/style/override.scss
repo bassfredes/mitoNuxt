@@ -1,10 +1,23 @@
+$blanco: #FFF;
+.application.theme--light {
+    background: $blanco;
+}
+
+.card {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    .list__tile__title,
+    .navigation-drawer>.list .list__tile--active .list__tile__title {
+        font-weight: 700;
+    }
+}
+
 .primary--text {
     color: #000 !important;
 }
 
 .list__tile__title,
 .navigation-drawer>.list .list__tile--active .list__tile__title {
-    color: #FFF;
     font-weight: 300;
     font-size: 20px;
 }
@@ -14,18 +27,86 @@ aside {
         height: 38px;
         padding: 0 40px;
     }
+    .list__tile__title,
+    .navigation-drawer>.list .list__tile--active .list__tile__title {
+        font-weight: 300;
+        font-size: 20px;
+        color: $blanco;
+    }
 }
+
+.navigation-drawer>.list .list__tile--active .list__tile__title {
+    color: $blanco;
+    font-weight: 700;
+}
+
+.application .theme--dark.list .list__group__header:hover,
+.application .theme--dark.list .list__tile--highlighted,
+.application .theme--dark.list .list__tile--link:hover,
+.theme--dark .list .list__group__header:hover,
+.theme--dark .list .list__tile--highlighted,
+.theme--dark .list .list__tile--link:hover {
+    background: #555;
+}
+
 .application .theme--light.toolbar,
 .theme--light .toolbar {
-    background: #FFF;
+    background: $blanco;
 }
+
 .toolbar {
     -webkit-box-shadow: none;
     box-shadow: none;
 }
+
 nav {
     .toolbar__title {
+        display: block;
         font-size: 16px;
         font-weight: 600;
+        position: relative;
+        top: -8px;
+    }
+    .titlePage {
+        display: block;
+        position: absolute;
+        left: 24px;
+        top: 30px;
+        font-size: 20px;
+        font-weight: 100;
+    }
+}
+
+footer {
+    background: $blanco !important;
+    img {
+        max-width: 50px;
+        margin: 5px auto !important;
+    }
+}
+
+.list--three-line .list__tile {
+    height: 108px;
+    padding: 0;
+}
+
+.avatar {
+    height: auto !important;
+    margin-right: 15px;
+    margin-left: 10px;
+    margin-top: 25px;
+    display: block;
+}
+
+.detalle {
+    .avatar {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .list__tile__content .list__tile__title {
+        text-align: center;
+    }
+    .list__tile__sub-title.wrap {
+        white-space: normal;
     }
 }

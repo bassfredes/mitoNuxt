@@ -2,7 +2,7 @@
   <v-app light>
     <v-toolbar prominent app :clipped-left="clipped">
       <v-toolbar-title v-text="title"></v-toolbar-title>
-      <div class="titlePage"></div>
+      <div class="titlePage">{{subtitle}}</div>
       <v-spacer></v-spacer>
       <v-btn icon @click.stop="rightDrawer = !rightDrawer">
         <v-icon>menu</v-icon>
@@ -20,21 +20,21 @@
       <v-list>
         <v-list-tile router :to="item.to" :key="i" v-for="(item, i) in items" exact>
           <v-list-tile-content>
-            <v-list-tile-title v-text="item.title"></v-list-tile-title>
+            <v-list-tile-title v-on:click="changeTitle" v-text="item.title"></v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
     <v-footer app>
-      <span>Mitocondria</span>
+      <img src="/mito.png" alt="Mitocondria" class="mb-1" />
     </v-footer>
   </v-app>
 </template>
 
 <script>
-  import axios from 'axios'
   export default {
     data () {
+      this.$store.dispatch('personas/cargarLista')
       return {
         clipped: false,
         drawer: true,
@@ -43,26 +43,19 @@
         right: true,
         rightDrawer: false,
         title: 'Mitocondria',
+        subtitle: 'Inicio',
         items: [
-          { title: 'Ejecutivas de Cuentas', to: '/' },
-          { title: 'FrontEnd', to: '/frontend' },
-          { title: 'Business', to: '/business' },
-          { title: 'Dirección Creativa', to: '/creativa' }
-        ],
-        personas: []
+          { title: 'Ejecutivas de Cuentas', id: 'ejecutivas_de_cuentas', to: '/ejecutivas' },
+          { title: 'FrontEnd', id: 'frontend', to: '/frontend' },
+          { title: 'Business', id: 'business', to: '/business' },
+          { title: 'Dirección Creativa', id: 'creativa', to: '/creativa' }
+        ]
       }
     },
     methods: {
-      cargarPersonas: function () {
-        axios.get('/mitocondrianos.json').then((response) => {
-          this.personas = response.data
-        }, (err) => {
-          console.log(err)
-        })
+      changeTitle: function (event) {
+        this.subtitle = event.target.innerText
       }
-    },
-    mounted: function () {
-      this.cargarPersonas()
     }
   }
 </script>
